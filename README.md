@@ -81,6 +81,7 @@ If you not join on Grass Stage 1, don't forget to join Stage 2.
 Currently grass Stage 2 is on Epoch 1, idk it will run until how many Epoch
 
 JOIN GRASS EPOCH 2 : https://app.getgrass.io/register/?referralCode=dVd4bPfawQRfeia
+
 NODE : https://app.getgrass.io/dashboard/store
 
 Make sure you use Static Residential Proxy not just Residential Proxy (Rotating) 

@@ -14,6 +14,7 @@
     - [Windows](#windows)
   - [Update Bot](#update-bot)
   - [IMPORTANT NOTE (READ IT THIS IS NOT DECORATION)](#important-note-read-it-this-is-not-decoration)
+  - [TROUBLESHOOT](#troubleshoot)
   - [CONTRIBUTE](#contribute)
   - [SUPPORT](#support)
 
@@ -162,12 +163,34 @@ To update bot follow this step :
 
 DWYOR
 
-How can I get Teneo Points?
+How can I get GRASS Points?
 Read on this Article : [GRASS NODE REPUTATION SCORING](https://grass-foundation.gitbook.io/grass-docs/architecture/node-reputation-scoring)
 
 **USE STATIC RESIDENTIAL PROXY**
 
 If you want to regist a new account, make sure to use chrome with incognito or browser with no grass extension.
+
+
+## TROUBLESHOOT
+
+if any error happen or bot not runnnig check on log file
+```
+cat log/app.log
+```
+
+if any error happen agains rand_user_agent package,
+open file `user-agents.json` or open this link https://raw.githubusercontent.com/Widiskel/grass-node-bot/refs/heads/master/user-agents.json
+
+and copy content to
+`node_modules/rand-user-agent/data/user-agents.json`
+
+open it, delete `{}` using `ctrl + k` and paste
+```
+nano node_modules/rand-user-agent/data/user-agents.json
+```
+save with `ctrl + ` and press `Y` and `Enter`.
+
+LFG
 
 ## CONTRIBUTE
 

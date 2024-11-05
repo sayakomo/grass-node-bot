@@ -1,6 +1,8 @@
 # GRASS EXTENSION NODE BOT
 ![GRASS](assets/img1.jpg)
 
+Grass Extension node, with multiple proxy (worker) support, it generate random device id for each proxy, and save it. As long as database.db not deleted that proxy will always have binded device id everytime bot run
+
 
 ## Table Of Contents
 - [GRASS EXTENSION NODE BOT](#grass-extension-node-bot)

@@ -5,11 +5,9 @@
   "description": "grass-node-bot",
   "main": "index.js",
   "scripts": {
-    "start": "node --no-warnings start.js",
+    "start": "node --no-warnings index.js",
     "setup": "node --no-warnings setup.js",
-    "dev": "node --no-warnings index.js",
-    "build": "rm -rf app && javascript-obfuscator --config build-config.json",
-    "test": "node test.js"
+    "dev": "node --no-warnings index.js"
   },
   "keywords": [
     "grass",

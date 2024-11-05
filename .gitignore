@@ -11,6 +11,6 @@ config/proxy_list.js
 database.db
 app/accounts
 app/config
-/index.js
-build-config.json
-/src
+# /index.js
+# build-config.json
+# /src

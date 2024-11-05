@@ -105,15 +105,11 @@ DWYOR
    ```
    nano accounts/accounts.js
    ```
-4. Configure the bot config
-   ```
-   nano config/config.js
-   ```
-5. Configure the proxy
+4. Configure the proxy
    ```
    nano config/proxy_list.js
    ```
-6. Run Bot
+5. Run Bot
    ```
    npm run start
    ```
@@ -131,11 +127,10 @@ DWYOR
 5. Navigate to `grass-node-bot` directory. 
 6. Navigate to `accounts` folder and rename `accounts_tmp.js` to `accounts.js`.
 7. Now open `acccounts.js` and setup your accounts.
-8. Navigate to `config` and adjust the `config.js` as needed.
-9. Also Configure proxy if you want to use proxy, by open `proxy_list.js`. (if you have 5 accounts, proxy is required)
-10. Back to `grass-node-bot` directory.
-11. To start the app open your `Command Prompt` or `Power Shell`
-12. Run Bot
+8. Also Configure proxy if you want to use proxy, by open `proxy_list.js`. (if you have 5 accounts, proxy is required)
+9.  Back to `grass-node-bot` directory.
+10. To start the app open your `Command Prompt` or `Power Shell`
+11. Run Bot
     ```
     npm run start
     ```

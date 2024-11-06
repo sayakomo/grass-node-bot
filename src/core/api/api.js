@@ -52,17 +52,9 @@ export class API {
           "accept-language": "en-US,en;q=0.9,id;q=0.8",
           priority: "u=1, i",
           "sec-ch-ua": this.ua,
-          "sec-ch-ua-mobile": "?0",
-          "sec-ch-ua-platform": '"macOS"',
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "none",
         },
-        referrerPolicy: "strict-origin-when-cross-origin",
-        body: null,
         method: "GET",
         mode: "cors",
-        credentials: "omit",
       };
 
       if (this.proxy) {
@@ -73,16 +65,12 @@ export class API {
         }
       }
       const response = await fetch(
-        "https://api.bigdatacloud.net/data/client-ip",
+        "https://api.ipify.org/?format=json",
         options
       );
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
       const data = await response.json();
-      this.IP = data.ipString;
+      this.IP = data.ip;
     } catch (error) {
       console.error("Error fetching IP data:", error);
       throw error;

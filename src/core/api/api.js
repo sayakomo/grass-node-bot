@@ -1,14 +1,14 @@
 import { HttpsProxyAgent } from "https-proxy-agent";
 import fetch from "node-fetch";
-import randUserAgent from "rand-user-agent";
+import UserAgent from "user-agents";
 import logger from "../../utils/logger.js";
 import { SocksProxyAgent } from "socks-proxy-agent";
 
 export class API {
   constructor(url, proxy) {
     this.url = url;
+    this.userAgent = new UserAgent({ deviceCategory: "desktop" });
     this.proxy = proxy;
-    this.ua = randUserAgent("desktop");
     this.IP = "-";
   }
 
@@ -16,7 +16,7 @@ export class API {
     const headers = {
       Accept: "*/*",
       "Content-Type": "application/json",
-      "User-Agent": this.ua,
+      "User-Agent": this.userAgent.toString(),
       "sec-fetch-dest": "empty",
       "sec-fetch-mode": "cors",
       "sec-fetch-site": "same-site",

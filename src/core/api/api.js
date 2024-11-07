@@ -51,7 +51,7 @@ export class API {
           accept: "application/json, text/plain, */*",
           "accept-language": "en-US,en;q=0.9,id;q=0.8",
           priority: "u=1, i",
-          "sec-ch-ua": this.ua,
+          "sec-ch-ua": this.userAgent.toString(),
         },
         method: "GET",
         mode: "cors",
